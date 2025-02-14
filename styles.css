@@ -1,0 +1,139 @@
+body{
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background-color: white;
+  height: 100vh;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 30px 25px;
+  gap: 25px;
+  height: 60px;
+  box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.25);
+  z-index: 1;
+}
+
+.main--facts{
+  margin-top: 46px;
+  max-width: 400px;
+}
+
+.main--facts > li{
+  line-height: 19px;
+  padding-block: 10px;
+}
+
+.main--facts > li::marker {
+  font-size: 1.4rem;
+  color: #61DAFB;
+}
+
+
+.nav-h4{
+  margin: 0;
+  color: greenyellow;
+}
+
+.nav-h3{
+  margin: 0;
+  margin-right: auto;
+  color: greenyellow;
+  font-size: 25px;
+}
+
+.nav-img{
+  height: 50px;
+  margin-right: 10px;
+}
+
+.head{
+  padding: 30px;
+  margin-top: 0px;
+  
+  font-size: 40px;
+}
+
+main{
+  height: 100vh;
+  padding: 40px 25px;
+  background-image: url("./images/react-icon-large.png");
+  background-repeat: no-repeat;
+  background-position-x: right;
+  background-position-y: center;
+}
+
+main.dark {
+  background-image: url("./images/react-icon-large.png"); 
+  background-color: #282D35;
+  color: white;    
+}
+
+
+.toggler {
+  display: flex;
+  align-items: center;
+}
+
+.toggler p {
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.toggler-slider{
+  width: 28px;
+  height: 15px;
+  background-color: #2B283A;
+  border-radius: 2rem;
+  cursor: pointer;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-inline: 7px;
+}
+
+.toggler-slider-circle {
+  height: 12px;
+  width: 12px;
+  background-color: white;
+  border-radius: 50%;
+}
+
+nav.dark .toggler-slider {
+  border-color: white;
+  background-color: #F5F5F5;
+}
+
+nav.dark .toggler-slider-circle {
+  background-color: black;
+}
+.toggler-light {
+  color: #2B283A;
+}
+
+nav.dark .toggler-light {
+  color: #918E9B;
+}
+
+.toggler-dark {
+  color: #D5D4D8;
+}
+
+nav.dark .toggler-dark {
+  color: white;
+}
+
+nav.dark .toggler-slider {
+  justify-content: flex-end;
+}
+
+nav.dark{
+  background-color: black;
+}
